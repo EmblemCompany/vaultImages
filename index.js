@@ -21,7 +21,7 @@ function runGitCommands() {
     if (code !== 0) {
       console.error(`Command exited with code: ${code}`);
     }
-    process.exit(0);
+    process.exit(1);
   })
 }
 
