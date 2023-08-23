@@ -9,7 +9,10 @@ function runGitCommands() {
     console.log(`stdout: ${stdout}`);
     console.error(`stderr: ${stderr}`);
   });
+  setTimeout(()=>{
+    runGitCommands()
+  }, 600000);
 }
-
+runGitCommands()
 // Run the function every 1000 milliseconds (1 second)
-setInterval(runGitCommands, 60000);
+
