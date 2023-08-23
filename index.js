@@ -11,7 +11,7 @@ function runGitCommands() {
   });
   setTimeout(()=>{
     runGitCommands()
-  }, 600000);
+  }, 1000);
 }
 runGitCommands()
 // Run the function every 1000 milliseconds (1 second)
