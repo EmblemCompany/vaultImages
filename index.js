@@ -20,7 +20,7 @@ function runGitCommands() {
     if (code !== 0) {
       console.error(`Command exited with code: ${code}`);
     }
-    setTimeout(runGitCommands, 60000);
+    setTimeout(runGitCommands, 15000);
   })
 }
 
