@@ -1,4 +1,5 @@
-const { spawn } = require('child_process');
+const { spawn } = require('child_process')
+const WAIT_TIME = 15000
 
 function runGitCommands() {
   const command = spawn('sh', ['-c', `git add . && git commit -m "image cache" && git push`]);
@@ -25,4 +26,4 @@ function runGitCommands() {
   })
 }
 
-setTimeout(runGitCommands, 15000);
+setTimeout(runGitCommands, WAIT_TIME);
