@@ -1,18 +1,27 @@
-const { exec } = require('child_process');
+const { spawn } = require('child_process');
 
 function runGitCommands() {
-  exec('git add . && git commit -m "image cache" && git push', (error, stdout, stderr) => {
-    if (error) {
-      console.error(`Error executing command: ${error}`);
-      return;
-    }
-    console.log(`stdout: ${stdout}`);
-    console.error(`stderr: ${stderr}`);
-  });
-  setTimeout(()=>{
-    runGitCommands()
-  }, 60000);
-}
-runGitCommands()
-// Run the function every 1000 milliseconds (1 second)
+  const command = spawn('sh', ['-c', 'git add . && git commit -m "image cache" && git push']);
 
+  // This will print the output of the command to the console in real-time
+  command.stdout.on('data', (data) => {
+    console.log(data.toString());
+  });
+
+  command.stderr.on('data', (data) => {
+    console.error(data.toString());
+  });
+
+  command.on('error', (error) => {
+    console.error(`Error executing command: ${error}`);
+  });
+
+  command.on('close', (code) => {
+    if (code !== 0) {
+      console.error(`Command exited with code: ${code}`);
+    }
+    setTimeout(runGitCommands, 60000);
+  })
+}
+
+runGitCommands();
