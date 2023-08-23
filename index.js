@@ -21,8 +21,8 @@ function runGitCommands() {
     if (code !== 0) {
       console.error(`Command exited with code: ${code}`);
     }
-    setTimeout(runGitCommands, 15000);
+    process.exit(0);
   })
 }
 
-runGitCommands();
+setTimeout(runGitCommands, 15000);
