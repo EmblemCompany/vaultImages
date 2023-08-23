@@ -1,7 +1,7 @@
 const { spawn } = require('child_process');
 
 function runGitCommands() {
-  const command = spawn('sh', ['-c', 'git add . && git commit -m "image cache" && git push']);
+  const command = spawn('sh', ['-c', `git add . && git commit -m "image cache" && git push`]);
 
   // This will print the output of the command to the console in real-time
   command.stdout.on('data', (data) => {
