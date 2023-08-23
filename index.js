@@ -17,6 +17,7 @@ function runGitCommands() {
   });
 
   command.on('close', (code) => {
+    console.log("sleep...")
     if (code !== 0) {
       console.error(`Command exited with code: ${code}`);
     }
