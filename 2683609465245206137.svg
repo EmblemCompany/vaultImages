@@ -1,0 +1,59 @@
+       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" viewBox="-300 -300 600 600">
+       <circle style="opacity:0.9;fill:hsl(217, 10%, 0%);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" id="rect1313" width="598.37885" height="598.38275" x="-298.38275" y="-298.38275" preserveAspectRatio="xMidYMid"/>        
+        <animate attributeName="opacity" from="0" to="1" dur="10s" repeatCount="2"/>       
+        <circle cx="0" cy="0" r="340" stroke="none" stroke-width="3" fill="hsl(35, 30%, 39%"/>
+        <circle cx="0" cy="0" r="320" stroke="none" stroke-width="3" fill="hsl(35, 60%, 39%"/>
+        <circle cx="0" cy="0" r="300" stroke="none" stroke-width="3" fill="hsl(35, 90%, 39%"/>
+        <circle cx="0" cy="0" r="280" stroke="none" stroke-width="3" fill="hsl(205, 50%, 50%"/>
+        <circle cx="0" cy="0" r="260" stroke="none" stroke-width="3" fill="hsl(205, 75%, 50%"/>
+        <circle cx="0" cy="0" r="240" stroke="none" stroke-width="3" fill="hsl(205, 100%, 50%"/>
+        <g id="a">
+        <circle r="50"/>
+        <path d="M75,0 A 75,75 0 0,0 37.5,-64.952 L 125,-216.506 A 250,250 0 0,1 250,0 z" id="bld"/>
+        <path d="M75,0 A 75,75 0 0,0 37.5,-64.952 L 125,-216.506 A 250,250 0 0,1 250,0 z" id="bld"/>
+        <use xlink:href="#bld" transform="rotate(120)"/>
+        <use xlink:href="#bld" transform="rotate(240)"/>
+        <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="5s" from="0 0 0" to="120 0 0" repeatCount="4" />
+        </g>
+        <g id="b">
+        <circle r="50"/>
+        <path d="M75,0 A 75,75 0 0,0 37.5,-64.952 L 125,-216.506 A 250,250 0 0,1 250,0 z" id="bld"/>
+        <use xlink:href="#bld" transform="rotate(120)"/>
+        <use xlink:href="#bld" transform="rotate(240)"/>
+        <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="5s" from="0 0 0" to="-120 0 0" repeatCount="3" />
+        </g>
+        <circle cx="0" cy="-125" r="40" stroke="black" stroke-width="3" fill="hsl(',currentWord.bgHue,', 100%, 35%)k" />'
+        <text x="-25%" y="10%" dominant-baseline="middle" fill="hsl(',currentWord.bgHue,', 100%, 50%" text-anchor="middle" font-size="50">Angels</text>
+        <g id="c">
+        <animate attributeName="opacity" from="0" to="1" dur="2s" repeatCount="10"/>
+        <a xlink:href="https://atomicangelz.com">
+        <text x="0" y="0" dominant-baseline="middle" fill="hsl(30, 100%, 50%" text-anchor="middle" font-size="30">atomic</text>
+        </a></g>
+        <path id="path" d="M50 15A5 35 0 0 1 50 85A5 35 0 0 1 50 15" fill="none"></path>
+        <path id="patha" d="M0 0A5 35 0 0 1 0 70A5 35 0 0 1 0 0" fill="none"></path>
+        <g transform="rotate(0 50 50)">
+        <use xlink:href="#path" stroke="#fdfdfd" x="-50" y="-175" stroke-width="3"></use>
+        </g><g transform="rotate(60 50 50)">
+        <use xlink:href="#path" stroke="#fdfdfd" x="-180" y="-45" stroke-width="3"></use>
+        </g><g transform="rotate(120 50 50)">
+        <use xlink:href="#path" stroke="#fdfdfd" x="-130" y="130" stroke-width="3"></use>
+        </g><g transform="rotate(0 50 50)">
+        <circle cx="0" cy="-160" r="5" fill="#3c198e">
+        <animateMotion dur="2.941176470588235s" repeatCount="indefinite" begin="0s">
+        <mpath xlink:href="#patha"></mpath>
+        </animateMotion>
+        </circle>
+        </g><g transform="rotate(60 50 50)">
+        <circle cx="-130" cy="-30" r="5" fill="#144e7b">
+        <animateMotion dur="2.941176470588235s" repeatCount="indefinite" begin="-0.16666666666666666s">
+        <mpath xlink:href="#patha"></mpath>
+        </animateMotion>
+        </circle>
+        </g><g transform="rotate(120 50 50)">
+        <circle cx="-80" cy="145" r="5" fill="#b92cbe">
+        <animateMotion dur="2.941176470588235s" repeatCount="indefinite" begin="-0.3333333333333333s">
+        <mpath xlink:href="#patha"></mpath>
+        </animateMotion>
+        </circle>
+        </g>
+        </svg>
