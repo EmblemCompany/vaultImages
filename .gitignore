@@ -1,1 +1,3 @@
 */*/node_modules
+# Explicitly ignore the scanner's node_modules at repo root
+/tools/recursive-ord-scanner/node_modules/
